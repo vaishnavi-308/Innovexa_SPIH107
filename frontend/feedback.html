@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Inspector Feedback | PredictSafe AI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            PredictSafe <span>AI</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="upload.html">
+                Upload Data
+            </a>
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Feedback -->
+    <main class="feedback-page">
+
+
+        <div class="feedback-container">
+
+
+            <p class="small-heading">
+                INSPECTOR FEEDBACK
+            </p>
+
+
+            <h1>
+                Help Improve Risk Predictions
+            </h1>
+
+
+            <p>
+                After inspecting the equipment,
+                provide feedback on the predicted risk.
+            </p>
+
+
+
+            <form id="feedbackForm">
+
+
+                <label for="equipment">
+                    Equipment ID
+                </label>
+
+                <input
+                    type="text"
+                    id="equipment"
+                    placeholder="Example: P101"
+                    required
+                >
+
+
+
+                <label for="prediction">
+                    Predicted Risk
+                </label>
+
+                <select id="prediction" required>
+
+                    <option value="">
+                        Select risk level
+                    </option>
+
+                    <option value="HIGH">
+                        HIGH
+                    </option>
+
+                    <option value="MEDIUM">
+                        MEDIUM
+                    </option>
+
+                    <option value="LOW">
+                        LOW
+                    </option>
+
+                </select>
+
+
+
+                <label>
+                    Was the prediction correct?
+                </label>
+
+
+                <div class="feedback-options">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="correct"
+                            value="Yes"
+                            required
+                        >
+
+                        Yes
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="correct"
+                            value="No"
+                        >
+
+                        No
+
+                    </label>
+
+                </div>
+
+
+
+                <label for="actualCondition">
+                    Actual Condition
+                </label>
+
+                <textarea
+                    id="actualCondition"
+                    placeholder="Describe what was found during inspection..."
+                    rows="5"
+                    required>
+                </textarea>
+
+
+
+                <label for="comments">
+                    Inspector Comments
+                </label>
+
+                <textarea
+                    id="comments"
+                    placeholder="Add any additional comments..."
+                    rows="4">
+                </textarea>
+
+
+
+                <button
+                    type="submit"
+                    class="main-button">
+
+                    Submit Feedback →
+
+                </button>
+
+
+            </form>
+
+
+            <p id="feedbackMessage"></p>
+
+
+        </div>
+
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
